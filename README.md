@@ -1,5 +1,6 @@
 # excel-sales-dashboard-python
   ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white) ![openpyxl](https://img.shields.io/badge/openpyxl-Excel%20output-217346)
+
 <img width="475" height="310" alt="Screenshot 2026-11-02 123523" src="https://github.com/user-attachments/assets/39d45182-b1ea-4bef-bcfe-2405c9c667fd" />
 
 ## The Problem
