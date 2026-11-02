@@ -1,7 +1,7 @@
 # excel-sales-dashboard-python
   ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white) ![openpyxl](https://img.shields.io/badge/openpyxl-Excel%20output-217346)
 
-<img width="475" height="310" alt="Screenshot 2026-11-02 123523" src="https://github.com/user-attachments/assets/39d45182-b1ea-4bef-bcfe-2405c9c667fd" />
+<img width="475" height="310" align="center" alt="Screenshot 2026-11-02 123523" src="https://github.com/user-attachments/assets/39d45182-b1ea-4bef-bcfe-2405c9c667fd" />
 
 ## The Problem
 Exports of raw sales are deceptive. Real product sales are mixed with cancellations, postage, Amazon fees, bank costs, bad-debt adjustments, human account updates, duplicate rows, and an incomplete final month in this dataset from a UK online gift wholesaler. The totals are incorrect when the revenue column is summed as is.
@@ -39,3 +39,4 @@ Instead of using quiet filtering, a log sheet is used. Each category displays it
 - Openpyxl is used for reporting and output (native Excel charts, tables, and formatting). Excel from Microsoft
 - Jupyter Notebook is the environment.
 - The UCI Machine Learning Repository, Online Retail (id 352) is the data source.
+Chen, D. (2015). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33.
