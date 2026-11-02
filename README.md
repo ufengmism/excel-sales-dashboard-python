@@ -1,7 +1,7 @@
 # excel-sales-dashboard-python
   ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white) ![openpyxl](https://img.shields.io/badge/openpyxl-Excel%20output-217346)
 
-<img width="475" height="310" align="center" alt="Screenshot 2026-11-02 123523" src="https://github.com/user-attachments/assets/39d45182-b1ea-4bef-bcfe-2405c9c667fd" />
+<img width="475" height="310" alt="Screenshot 2026-11-02 123523" src="https://github.com/user-attachments/assets/39d45182-b1ea-4bef-bcfe-2405c9c667fd" align="center"/>
 
 ## The Problem
 Exports of raw sales are deceptive. Real product sales are mixed with cancellations, postage, Amazon fees, bank costs, bad-debt adjustments, human account updates, duplicate rows, and an incomplete final month in this dataset from a UK online gift wholesaler. The totals are incorrect when the revenue column is summed as is.
