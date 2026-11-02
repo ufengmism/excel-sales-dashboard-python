@@ -1,4 +1,4 @@
-# excel-sales-dashboard-python
+# UCI Retail Sales KPI Dashboard (Python → Excel)
   ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white) ![openpyxl](https://img.shields.io/badge/openpyxl-Excel%20output-217346)
 
 Python pipeline which cleans 540k UK online retail transactions, true net sales are separated from cancellations, fees and adjustments. An audit-logged Excel KPI dashboard is generated in one run as well.
@@ -11,7 +11,7 @@ Exports of raw sales are deceptive. Real product sales are mixed with cancellati
 One issue is addressed by this project: **How did net product sales perform from December 2010 to November 2011, and where did the revenue originate from?** Every transaction is categorised, every exclusion is documented, and a ready-to-open Excel dashboard is produced.
 
 ## Findings
-1. Over a 12-month period, net sales was £9.23 million, with strong Q4 seasonality. In September and November of 2011 alone, £3.49 million (37.9%) was supplied. Compared to December 2010 (£755k), November 2011 (£1.43M) was 89% more.
+1. Over a 12-month period, net sales was £9.23 million, with strong Q4 seasonality. In September to November of 2011, £3.49 million (37.9%) was supplied. Compared to December 2010 (£755k), November 2011 (£1.43M) was 89% more.
 2. Income is focused by country: Approximately 85% of income comes from the UK. The Netherlands (£271k), EIRE (£247k), Germany (£194k), and France (£176k) are the biggest non-UK markets.
 3. The top product, Regency Cakestand 3 Tier, brought in £158.6k. Revenue is long-tail by product. Together, the top ten goods accounted for just around 8% of net sales.
 4. Cancellations must be netted out rather than disregarded because they counterbalance £457k, or around 4.7% of gross product sales.
@@ -32,8 +32,17 @@ Instead of using quiet filtering, a log sheet is used. Each category displays it
 ## Key Features
 - Eight priority-ordered categories (sales, cancellations, costs, duplicates, bad debt, manual adjustments with or without customer ID, unfinished month, and zero-unknown check) comprise the rule-based transaction classification.
 - Postage, fees, bank charges, bad debt, and duplicates are not included in business-correct net sales; cancellations are netted out.
-- Row share, $ impact, keep/remove decision, and written justification for each category are all included on the audit log page.
+- Row share, £ impact, keep/remove decision, and written justification for each category are all included on the audit log page.
 - Four KPI cards, a monthly revenue trend, the top ten goods, and a non-UK revenue breakdown by region are all displayed as native, editable Excel charts in this one-run Excel dashboard.
+
+## How to Run
+1. Install Python 3.12+ and run `pip install -r requirements.txt`
+2. Download the dataset from [UCI: Online Retail](https://archive.ics.uci.edu/dataset/352/online-retail) and place `Online Retail.xlsx` next to the notebook.
+3. Open `UCI Retail Sales.ipynb` → Run All → `Dashboard.xlsx` is generated.
+
+## Known Limitations
+- **Total Customers (7,681) is an upper bound.** Guest checkouts do not have a CustomerID, so each guest invoice is counted as a separate customer: 4,297 registered customers + 3,384 guest orders.
+- Duplicate rows are assumed to be system error, some may be genuine repeat line items.
 
 ## Tech Stack
 - Python is the programming language used.
