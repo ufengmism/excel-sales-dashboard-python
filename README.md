@@ -1,6 +1,8 @@
 # excel-sales-dashboard-python
   ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white) ![openpyxl](https://img.shields.io/badge/openpyxl-Excel%20output-217346)
 
+Python pipeline which cleans 540k UK online retail transactions, true net sales are separated from cancellations, fees and adjustments. An audit-logged Excel KPI dashboard is generated in one run as well.
+
 ![UCI Retail KPI Dashboard](images/dashboard.png)
 
 ## The Problem
